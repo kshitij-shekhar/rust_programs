@@ -1,7 +1,9 @@
-use rand::Rng;
+use rand::Rng;//Rng trait brings into scope functions needed to generate Random numbers
 use std::io;
 fn main() {
     println!("Guess the number!");
+    let secret_number=rand::thread_rng().gen_range(1..=10);
+    println!("The secret number is : {secret_number}");
     println!("Please enter your guess!");
     let mut guess = String::new();
     io::stdin()
