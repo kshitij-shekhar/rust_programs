@@ -16,6 +16,7 @@ fn main() {
         let temp:f32= match temp.trim().parse() {
             Ok(num) =>  break num,
             Err(_) => continue,
+        
     };
 
     
